@@ -7,16 +7,81 @@
     <title>SafeStore</title>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
+    
 
 </head>
 <body>
+    <!-- Header  -->
+    <header>
+        <div class="Header_segment">
+            <img src="./assets/Safe_store_logo.png" alt="SafeStore Logo" style="height: 100%;">
 
-    <h1>
-        <img src="./assets/Safe_store_logo.png" alt="SafeStore Logo" style="height: 100%;">
+             <!-- Search Bar -->
+            <input id="Search_bar" type="search" placeholder="Search...">
 
-        <input id="Search_bar" type="search" placeholder="Search...">
-    </h1>
+        </div>
 
-    <footer>This is a footer fuck off</footer>
+        <div class="Header_segment">
+            <!-- Add Button -->
+            <img id="Plus_button" src="./assets/plus_icon.png" alt="plus icon for button" style="height: 50%;"> 
+        </div>
+
+                <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+            
+                <!-- Header of Modal -->
+            <div id="modal-content-header">
+                <div class="Header_segment">
+                    <img src="./assets/Safe_store_logo.png" alt="" style="height: 100%;">
+                    <p id="modal_title">Add an Item: </p>
+                </div>
+                <div class="Header_segment">
+                    <span id="close">&times;</span>
+                </div>
+            </div>
+
+                <!-- Modal content, inputs, labels and buttons -->
+            <div id="modal-content-body">
+
+                <label class="modal-content-label" for="name">Name Of Item:</label>
+                <br>
+                <input class="modal-content-input" type="text" name="name">
+
+                <label class="modal-content-label" for="Caliber">Caliber of Firearm:</label>
+                <br>
+                <input  class="modal-content-input" type="text" name="Caliber">
+
+                <label class="modal-content-label" for="PRN">Police Refrence Number:</label>
+                <br>
+                <input class="modal-content-input" type="text" name="PRN">
+
+                <label class="modal-content-label" for="SafeCode">Safe Refrence Code:</label>
+                <br>
+                <input class="modal-content-input" type="text" name="SafeCode">
+
+                <label class="modal-content-label" for="Description">Description of Firearm:</label>
+                <br>
+                <textarea id="modal-input-description" name="Description" cols="30" rows="5" style="width: 75%; resize: none;"></textarea>
+
+            </div>
+
+            <div id="modal-content-button-body">
+                <button class="modal-button">Delete</button>
+                <button class="modal-button" style="background-color: #e9af82; color: white;">Submit</button>
+            </div>
+
+            <!-- come back to this later -->
+            <!-- <form action=""></form> -->
+            </div>
+        
+        </div>
+    </header>
+
+    <!-- footer -->
+    <footer>This is a footer</footer>
 </body>
+<script src="./script.js"></script>
 </html>

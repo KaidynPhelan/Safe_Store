@@ -1,15 +1,14 @@
-h1{
-    background-color: #adb5bd;
+header{
+    background-color: #e9af82;
     height: 10rem;
     padding: 2rem;
     display: flex;
-    align-items: center;
-    
+    justify-content: space-between;
     
 }
 
 footer{
-    background-color: #adb5bd;
+    background-color: #e9af82;
     position: absolute;
     bottom: 0%;
     width: 100%;
@@ -28,3 +27,131 @@ footer{
 #Search_bar:focus{
     outline: none;
 }
+
+.Header_segment{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#Plus_button{
+    filter: drop-shadow(10px 10px 10px #3131316c);
+}
+
+#Plus_button:hover {
+    cursor: pointer;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    border: 3px solid #e9af82;
+    border-radius: 10px;
+    width: 50%;
+    height: 75%;
+    overflow: hidden;
+  }
+  
+  /* The Close Button */
+  #close {
+    color: white;
+    float: right;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  #close:hover,
+  #close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
+  #modal-content-header {
+      height: 10%;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      background-color: #e9af82;
+
+  }
+
+  #modal_title {
+      padding: 0.5rem;
+      color: white;
+      font-size: 1.5rem;
+      text-decoration: underline;
+  }
+
+  #modal-content-body {
+      display: flex;
+      flex-direction: column;
+      padding: 0.5rem;
+  }
+
+  .modal-content-input{
+      margin-bottom: 1rem;
+      width: 25%;
+      height: 2rem;
+      resize: none;
+      border: 2px solid #e9af82;
+      border-radius: 10px;
+
+
+  }
+
+  .modal-content-input:focus {
+        outline: none;
+  }
+
+  .modal-content-label {
+      color: grey;
+      font-size: 1.5rem;
+
+  }
+
+  #modal-input-description {
+    border: 2px solid #e9af82;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+
+  }
+
+  #modal-content-button-body {
+      display: flex;
+      justify-content: space-evenly;
+      
+  }
+
+  .modal-button {
+      padding: 1rem;
+      font-size: 1.5rem;
+      border: 2px solid #e9af82;
+      border-radius: 4px;
+      transition-duration: 0.4s;
+
+  }
+
+  .modal-button:hover {
+      background-color: #e9af82;
+      color: white;
+  }
+

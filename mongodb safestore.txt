@@ -1,0 +1,3 @@
+jdq9MNflPxlSnyrT
+
+mongodb+srv://admin:jdq9MNflPxlSnyrT@cluster0.iephf.mongodb.net/safestore?retryWrites=true&w=majority
